@@ -24,20 +24,10 @@ body::before {
     z-index: -1;
 }
 
-.login-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-}
-
-/* wrapper agar posisi card bertumpuk */
-.form-wrapper {
-  position: relative;
-  width: 100%;
-  height: 450px;
-}
-
 /* card base */
 .login-card {
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* animatable form */
@@ -54,7 +44,7 @@ body::before {
 /* hilang ke kiri */
 .form-hide-left {
   opacity: 0;
-  transform: translateX(-90%) scale(0.9);
+  transform: translateX(-90%) scale(1);
   z-index: 1;
   pointer-events: none;
 }
@@ -62,7 +52,7 @@ body::before {
 /* hilang ke kanan */
 .form-hide-right {
   opacity: 0;
-  transform: translateX(-10%) scale(0.9);
+  transform: translateX(-10%) scale(1);
   z-index: 1;
   pointer-events: none;
 }
